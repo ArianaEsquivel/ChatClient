@@ -1,14 +1,13 @@
 <div class="container text-center">
   <h1>{{ title }}</h1>
-  <br />
-  <br />
+  <br>
+  <br>
   <div class="card mx-auto" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Chat Sockets</h5>
       <ul class="list-group list-group-flush">
         <li class="list-group-item" *ngFor="let message of messages">
-          {{ message }}
-        </li>
+          {{ message }}</li>
       </ul>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
@@ -18,14 +17,12 @@
           type="text"
           class="form-control"
           placeholder="Message"
-          [(ngModel)]="msg"
-        />
+          [(ngModel)]="msg"/>
       </div>
       <button
         type="button"
         class="btn btn-primary btn-block"
-        (click)="sendMessage()"
-      >
+        (click)="sendMessage()">
         Send Message
       </button>
     </div>

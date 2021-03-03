@@ -29,6 +29,6 @@ export class AppComponent implements OnInit {
   sendMessage(): void {
     this.chat.emit("message", this.msg);
     this.messages.push(this.msg);
-    this.msg = "";
+    this.msg = ""; 
   }
 }
